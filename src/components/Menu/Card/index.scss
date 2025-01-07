@@ -1,0 +1,125 @@
+.Card {
+  &.card{
+    /* Home/Card */
+
+    width: 396px;
+    height: 123px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    order: 0;
+    flex-grow: 0;
+    img {
+      /* Rectangle 1 */
+
+      width: 83px;
+      height: 83px;
+
+      // background: url(greek salad.jpg);
+
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+
+    };
+    .info {
+      /* Frame 3 */
+
+      /* Auto layout */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      gap: 8px;
+
+      width: 297px;
+      height: 123px;
+
+
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      .name {
+        /* Greek Salad */
+
+        width: 296px;
+        height: 21px;
+
+        font-family: 'Karla';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height */
+
+        color: #000000;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+      .description {
+        /* The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. */
+
+        width: 297px;
+        height: 43px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+
+        font-family: 'Karla';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #495E57;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+      }
+      .price {
+        /* $12.99 */
+
+        width: 297px;
+        height: 43px;
+
+        font-family: 'Karla';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+
+        color: #495E57;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+      }
+    }
+    .line2 {
+      /* Line 2 */
+
+      position: absolute;
+      left: 0.51%;
+      right: 0%;
+      top: 97.56%;
+      bottom: 2.44%;
+
+      border: 1px solid #EDEFEE;
+
+    }
+  }
+}

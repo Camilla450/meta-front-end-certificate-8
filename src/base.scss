@@ -1,0 +1,50 @@
+@use 'sass:math';
+
+$design-width: 428;
+$design-height: 926;
+
+@function vw($px){
+  @return math.div($px, $design-width)*100vw;
+}
+
+@function vh($px){
+  @return math.div($px, $design-height)*100vh;
+}
+
+
+html, body {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: 'Markazi Text';
+  src: url('./assets/Markazi-Text/static/MarkaziText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Markazi Text';
+  src: url('./assets/Markazi-Text/static/Markazi-Semibold.ttf') format('truetype');
+  font-weight: 600; /* Semibold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Markazi Text';
+  src: url('./assets/Markazi-Text/static/MarkaziText-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Markazi Text';
+  src: url('./assets/Markazi-Text/static/MarkaziText-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
