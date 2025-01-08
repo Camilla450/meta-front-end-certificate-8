@@ -1,0 +1,39 @@
+/* Submit */
+.Button.button {
+  width: 175px;
+  height: 41px;
+  display: flex;
+  position: relative;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: #F4CE14;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+  span {
+    position: relative;
+    /* Home Page */
+
+    /* Button */
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    color: #000000;
+  }
+  .svg {
+    position: absolute;
+    height: 35px;
+    width: 45px;
+    left: 120px;
+  }
+}
+
+.clicked {
+  background-color: #EE9972 !important; 
+}

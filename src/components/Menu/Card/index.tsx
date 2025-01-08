@@ -14,7 +14,7 @@ export default function Page(props: {
         <span className="price">${props.price}</span>
       </div>
       <img src={props.pic} alt={props.name}/>
-      <div className="line2"></div>
+      {/* <div className="line2"></div> */}
     </div>
   )
 }

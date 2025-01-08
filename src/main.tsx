@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import WidthCheck from './WidthCheck';
 import HomePage from "@/pages/HomePage"
+import ReservePage from "@/pages/ReservePage"
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,12 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Navigate to="/home"></Navigate>
+  },
+  {
+    path: '/reserve',
+    element: <WidthCheck 
+              children={<ReservePage></ReservePage>}
+            />
   }
 ])
 

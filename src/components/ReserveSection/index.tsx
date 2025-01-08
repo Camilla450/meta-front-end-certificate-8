@@ -1,5 +1,6 @@
 import reserveSectionImg from "@/assets/reserveSectionImg.png"
 import "./index.scss"
+import { Link } from "react-router-dom"
 
 export default function Page() {
   return (
@@ -16,9 +17,9 @@ export default function Page() {
           </div>
           <img src={reserveSectionImg} alt="image" className="image"/>
         </div>
-        <div className="button">
+        <Link className="button" to="/reserve">
           <span>Reserve a table</span>
-        </div>
+        </Link>
       </div>
   )
 }
