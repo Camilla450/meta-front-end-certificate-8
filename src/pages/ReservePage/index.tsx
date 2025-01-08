@@ -6,6 +6,7 @@ import TimeSelector from "@/components/TimeSelector"
 import GuestSelector from "@/components/GuestSelector"
 import Checkbox from "@/components/Checkbox"
 import Button from "@/components/Button"
+// import { Link } from "react-router-dom"
 
 export default function Page() {
   return (
@@ -28,7 +29,11 @@ export default function Page() {
           <Checkbox/>
         </div>
         <div className="button-section">
-          <Button msg="Place Order" img="src/assets/cycling.png"/>
+          <Button 
+            msg="Place Order" 
+            img="src/assets/cycling.png"
+            path="/signup"
+          />
         </div>
         <div className="img-section">
           <img src="src/assets/reserveImage.png" alt="image"/>

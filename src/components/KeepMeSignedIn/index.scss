@@ -1,0 +1,28 @@
+.Keep-section.keep-section {
+  /* Frame 743 */
+
+  width: 390px;
+  height: 50px;
+  position: relative;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  span {
+    width: 330px;
+    height: 25px;
+    position: absolute;
+    top: 13px;
+    left: 50px
+  }
+  .Checkbox {
+    position: absolute;
+    left: 16px;
+    top: 13px;
+  }
+}

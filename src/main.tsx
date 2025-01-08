@@ -9,6 +9,7 @@ import {
 import WidthCheck from './WidthCheck';
 import HomePage from "@/pages/HomePage"
 import ReservePage from "@/pages/ReservePage"
+import SignUpPage from "@/pages/SignUpPage"
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,12 @@ const router = createBrowserRouter([
     element: <WidthCheck 
               children={<ReservePage></ReservePage>}
             />
+  },
+  {
+    path: "/signup",
+    element: <WidthCheck
+      children={<SignUpPage></SignUpPage>}
+    ></WidthCheck>
   }
 ])
 

@@ -1,0 +1,38 @@
+.OtherAuth.other-auth-section {
+  /* Frame 745 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  // padding: 10px 125px;
+  gap: 36px;
+
+  width: 390px;
+  height: 100px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  .section{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .social-icons {
+      position: relative;
+      height: 48px;
+      width: 48px;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.Input.date {
+  /* Frame 731 */
+
+  width: 100%;
+  height: 80px;
+
+  /* Inside auto layout */
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+  .input-title {
+    /* Date */
+    position: absolute;
+    width: 105px;
+    height: 23px;
+    left: 30px;
+    top: 30px;
+    word-wrap: normal;
+    word-break: keep-all;
+    white-space: nowrap;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: right;
+    text-transform: uppercase;
+
+    color: #000000;
+  };
+  .required {
+    /* * */
+    position: absolute;
+    width: 13px;
+    height: 14px;
+    left: 138px;
+    top: 20px;
+
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: right;
+    text-transform: uppercase;
+
+    color: #FF1515;
+  }
+  .input-container {
+    /* Field Content */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    // display: flex;
+    // flex-direction: column;
+    align-items: center;
+    // padding: 8px 15px;
+    // gap: 8px;
+
+    position: absolute;
+    width: 220px;
+    height: 45px;
+    left: 154px;
+    top: 17px;
+
+    background: #FFFFFF;
+    /* Input Field */
+    border-radius: 16px;
+    .input-area {
+      /* Field Content */
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      top: 0px;
+
+      .ant-input {
+        /* calendar-week */
+
+        width: calc(100% - 20px);
+        height: 100%;
+        padding: 0px;
+        left: 10px;
+        font-size: 30px;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        z-index: 0;
+        border: none;
+        // border-radius: 30px;
+      }
+      .dropdown {
+        /* Circle_Carret_Right */
+        position: absolute;
+        width: 14px;
+        height: 21px;
+
+        // transform: rotate(90deg);
+
+        /* Inside auto layout */
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        right: 32px;
+        top: 12px;
+
+      }
+    }
+  }
+}
+
+.additional-text {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: max-content;
+  color: red;
+  font-size: small;
+}
+
+.not-satisfied {
+  border: 1px solid red;
+}
+
+.satisfied {
+  border: 1px solid #333333;
+}
