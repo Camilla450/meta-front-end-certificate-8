@@ -48,3 +48,18 @@ html, body {
   font-weight: 500;
   font-style: normal;
 }
+
+#base-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+#page {
+  position: absolute;
+  height: 926px;
+  width: 428px;
+  top: 0px;
+  left: 0px;
+  border: 2px solid black;
+}

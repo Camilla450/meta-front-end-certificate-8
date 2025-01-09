@@ -3,12 +3,12 @@
     /* Frame 4 */
 
     position: relative;
-    width: calc(100% - 16px * 2);
+    width: 396px;
     margin: 16px;
     // top: 578px;
-    overflow-y: scroll;
-    height: calc(100% - 577px);
-
+    // overflow-y: scroll;
+    height: 296px;
+    overflow: hidden;
     .cards {
       /* Cards */
 
@@ -25,6 +25,7 @@
       // height: max-content;
       left: 0px;
       top: 0px;
+      overflow-y:scroll
       // overflow-y: scroll;
     }
   }

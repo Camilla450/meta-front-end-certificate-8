@@ -10,8 +10,10 @@ function WidthCheck({ children } : { children: React.ReactNode }) {
   const checkSize = () => {
     const width = window.innerWidth
     const height = window.innerHeight
-    console.log(height)
     setIsCorrectSize(width == pageWidth && height == pageHeight)
+    if (isCorrectSize == false) {
+      alert("from author: please be aware that the UX/UI assignment before uses 428*926 viewport, although it will not affect the app as the 428*926 region has border black, and the rest is left blank intentionally")
+    }
   }
 
   useEffect(() => {
@@ -20,7 +22,10 @@ function WidthCheck({ children } : { children: React.ReactNode }) {
   }, [])
   return (
     <>
-      { isCorrectSize ? children: <span>incorrect diaply size, please change to 428*926(IPhone 14 Plus/IPhone 13 Pro Max), sometimes the height is restricted, so you might consider using 75% option</span>}
+      { isCorrectSize ? 
+      <div id="base-container">{children}</div>
+      : 
+      <div id="base-container"><div id="page">{children}</div></div>}
     </>
   )
 }
