@@ -11,16 +11,15 @@ export default function Page() {
       <div className="container">
         <Back/>
         <div className="title-section">
-          <span className="title">Sign Up</span>
+          <span className="title">Sign In</span>
         </div>
         <div className="input-section">
-          <Input title="FULL NAME"/>
-          <Input title="EMAIL"/>
+          <Input title="USERNAME"/>
           <Input title="PASSWORD"/>
         </div>
         <KeepMeSignedIn/>
         <div className="sign-up-section">
-          <span className="text">Already a memeber? <a className="login" href="/signin">Log In</a></span>
+          {/* <span className="text">Already a memeber? <a className="login" href="/signin">Log In</a></span> */}
           <Button msg="Sign Up" path="/reserve"/>
           <span className="text">or sign up with</span>
         </div>
